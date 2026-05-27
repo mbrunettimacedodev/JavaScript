@@ -12,7 +12,7 @@ GitHub
 
 🎯 Objetivo
 
-O objetivo deste repositório é acompanhar minha evolução no aprendizado de JavaScript e desenvolvimento back-end, praticando exercícios e projetos propostos ao longo do curso.
+O objetivo deste repositório é acompanhar minha evolução no aprendizado de JavaScript, lógica de programação e desenvolvimento de software, através da prática de exercícios e projetos propostos ao longo do curso.
 
 📌 Observações
 
