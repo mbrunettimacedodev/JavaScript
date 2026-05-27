@@ -191,18 +191,95 @@ Abaixo de 18.5 → Abaixo do peso
 // mostre uma listagem com todos os nomes informados, na ordem inversa daquela em
 // que eles foram informados.
 
-let nomes = []
-let contaNomes
+// let nomes = []
+// let contaNomes
 
-    for(let i = 0; i < 7; i++){
-        let contaNomes = prompt("DIGITE 7 NOMES: ")
-        nomes.push(contaNomes)
-    }
+//     for(let i = 0; i < 7; i++){
+//         let contaNomes = prompt("DIGITE 7 NOMES: ")
+//         nomes.push(contaNomes)
+//     }
 
-    console.log(nomes)
+//     console.log(nomes)
+//     console.log(nomes.reverse())
+
+// 11. Crie um programa que leia o nome e a idade de 9 pessoas e guarde esses valores em
+// dois vetores, em posições relacionadas. No final, mostre uma listagem contendo apenas
+// os dados das pessoas menores de idade.
+
+// let nomes = []
+// let idades = []
+// let nomeMenores = []
+// let idadeMenores = []
+
+// for(let i = 0; i < 3; i++){
+//     let perguntaNome = prompt("Digite o seu nome: ")
+//     let perguntaIdade = Number(prompt("Digite sua idade: "))
+    
+//     if(perguntaIdade >= 18){
+//         nomes.push(perguntaNome)
+//         idades.push(perguntaIdade)
+//     }else{
+//         nomeMenores.push(perguntaNome)
+//         idadeMenores.push(perguntaIdade)
+//     }
+// }
+
+// console.log(`+18 confirmados: ${nomes} ${idades}`)
+// console.log(`-18 confirmados: ${nomeMenores} ${idadeMenores}`)
+
+// 12. Faça uma função que recebe, por parâmetro, a altura (alt) e o sexo de uma pessoa
+// eretorna o seu peso ideal. Para homens, calcular o peso ideal usando a fórmula: peso
+// ideal = 72.7 x alt - 58 e, para mulheres, peso ideal = 62.1 x alt - 44.7.
+
+// function pesoIdeal(sexo,altura){ //Altura em Metros
+    
+//     let pesoHomem = 72.7 * Number(altura) - 58
+//     let pesoMulher = 62.1 * Number(altura) - 44.7
+
+//     if(sexo == "M"){
+//         return console.log(pesoHomem.toFixed(2))
+//     }else if(sexo == "F"){
+//         return console.log(pesoMulher.toFixed(2))
+//     }else{
+//         console.log("Você digitou algum dado errado..")
+//     }
+// }
+
+// pesoIdeal("F",1.76)
+
+// 13. Uma indústria faz a folha mensal de pagamentos de seus 80 empregados baseada no
+// seguinte: existe uma tabela com os dados de cada funcionalidade: matrícula, nome e
+// salário bruto. Escreva um programa que leia e processe a tabela e emita (escreva na
+// tela), cada funcionário, seu contracheque, cujo formato é dado a seguir:
+// ○ Matrícula:
+// ○ Nome:
+// ○ Salário bruto:
+// ○ Dedução INSS:
+// ○ Salário líquido:
+// ○ (Dicas: desconto de 12%, salário líquido é a diferença entre salário bruto e a
+// redução do INSS).
+
+// let funcionarios = []
 
 
+// for(let i = 0; i < 2; i++){
+//     let perguntaMatricula = Number(prompt("DIGITE O NÚMERO DE MATRÍCULA: "))
+//     let perguntaNome = prompt("DIGITE SEU NOME: ")
+//     let perguntaSalario = Number(prompt("DIGITE SEU SALÁRIO: "))
+//     let INSS = perguntaSalario * 0.12
+//     let salarioLiquido = perguntaSalario - INSS
+   
+//     let tabelaFuncionarios = {
+    
+//     matricula: perguntaMatricula,
+//     nome: perguntaNome,
+//     salarioBruto: perguntaSalario,
+//     INSS: INSS,
+//     salarioLiquido: salarioLiquido
+// }
 
+// funcionarios.push(tabelaFuncionarios)
+    
+// }
 
-
-
+// console.log(funcionarios)
