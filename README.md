@@ -1,4 +1,4 @@
-Curso JavaScript — +prati | Codifica 🚀
+🚀 Curso JavaScript — +prati | Codifica 🚀
 
 Bem-vindo ao repositório Curso JavaScript.
 Este repositório foi criado para armazenar exercícios, desafios e conteúdos desenvolvidos durante minha formação em desenvolvimento através do programa +prati | Codifica.
@@ -15,6 +15,7 @@ GitHub
 O objetivo deste repositório é acompanhar minha evolução no aprendizado de JavaScript e desenvolvimento back-end, praticando exercícios e projetos propostos ao longo do curso.
 
 📌 Observações
+
 Alguns exercícios utilizam a biblioteca prompt-sync
 
 👨‍💻 Autor
