@@ -4,6 +4,7 @@ Bem-vindo ao repositório Curso JavaScript.
 Este repositório foi criado para armazenar exercícios, desafios e conteúdos desenvolvidos durante minha formação em desenvolvimento através do programa +prati | Codifica.
 
 🛠 Tecnologias Utilizadas
+
 JavaScript
 Node.js
 Git
