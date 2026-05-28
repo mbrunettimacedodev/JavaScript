@@ -283,3 +283,145 @@ Abaixo de 18.5 → Abaixo do peso
 // }
 
 // console.log(funcionarios)
+
+// 14. A prefeitura de uma cidade fez uma pesquisa entre os seus habitantes, coletando dados
+// sobre salário e número de filhos. 
+// Faça uma função que leia esses dados para um
+// número não determinado de pessoas e retorne a média de salário da população, a
+// média do número de filhos, o maior salário e o percentual de pessoas com salário até
+// R$350,00.
+
+// let somaSalario = 0
+// let somaFilhos = 0
+// let totalPessoas = 0
+// let maiorSalario = 0
+// let salarioDefinido = 0 // até 350
+// let continuar
+
+// do{
+// let perguntaSalario = Number(prompt("Qual é o seu salário? "))
+// let perguntaFilho = Number(prompt("Quantos filhos você tem? "))
+
+// somaSalario += perguntaSalario
+// somaFilhos += perguntaFilho
+// totalPessoas++
+
+// if(perguntaSalario > maiorSalario){
+//     maiorSalario = perguntaSalario
+// }
+
+// if(perguntaSalario <= 350){
+//     salarioDefinido++
+// }
+
+// continuar = prompt("Para continuar digite s ou para parar digite n: ")
+
+// }while(continuar == "s")
+
+//     function mediaSalario(){
+//         return Number(somaSalario / totalPessoas)
+//     }
+
+//     function mediaFilhos(){
+//         return Number(somaFilhos / totalPessoas)
+//     }
+
+//     function percentual(){
+//         return Number((salarioDefinido / totalPessoas) * 100)
+//     }
+
+
+// console.log("Média de salário:", mediaSalario().toFixed(2))
+// console.log("Média de filhos:", mediaFilhos())
+// console.log("Maior salário:", maiorSalario.toFixed(2))
+// console.log("Percentual até 350:", percentual() + "%")
+
+// 15. Criar e imprimir a matriz identidade MI[1..7,1..7] em que todos os elementos da diagonal
+// principal são iguais a 1 e os demais são nulos.
+
+// let tamanho = 10
+
+// for(let linha = 0; linha < tamanho; linha++){
+
+//     let resultado = ""
+
+//     for(let coluna = 0; coluna < tamanho; coluna++){
+
+//         if(linha === coluna){
+//             resultado += "1"
+//         }else {
+//             resultado += "0"
+//         }
+
+       
+//     }
+
+//      console.log(resultado)
+// }
+
+// 16. Dada uma matriz M[1..6,1..8], criar um vetor C que contenha, em cada posição, a
+// quantidade de elementos negativos da linha correspondente de M.
+
+// let M = [[1, -2, 3],
+//         [1, -2, 3]]
+
+// let C = []
+        
+
+// for(let l = 0; l < M.length; l++){
+//     let elemNegativos = 0
+
+//     for(let c = 0; c < M.length; c++){
+//         if(M[l][c] < 0){
+//          elemNegativos++
+//          console.log(`N° negativo encontrando: ${M[l][c]} Na posição: [${l}][${c}]`)
+//     }
+//     }
+    
+//     C[l] = elemNegativos
+    
+// }
+
+// 17. Dado o objeto pessoa com propriedades nome e idade, acesse e imprima o valor de
+// idade. Adicione uma nova propriedade chamada email ao objeto pessoa que já possui
+// nome e idade.
+
+// let pessoa = {
+//     nome: "Matheus",
+//     idade: 25
+// }
+
+// pessoa.email = "mbrunettimacedo@gmail.com"
+
+// console.log(pessoa.nome)
+// console.log(pessoa.idade)
+// console.log(pessoa.email)
+
+// 18. Crie um objeto chamado dados que contém várias propriedades, incluindo números,
+// strings e arrays. Escreva uma função que retorne um novo objeto apenas com as
+// propriedades que são arrays.
+
+// let dados = {
+    
+//     nome: "Matheus",
+//     idade: 25,
+//     mochila: ["Caderno", "Lápis", "Caneta"],
+// }
+
+// function filtrarArrays(objeto){
+//     let novoObjeto = {}
+
+//     for(let chave in objeto){
+//         if(Array.isArray(objeto[chave])){
+//             novoObjeto[chave] = objeto[chave]
+//         }
+//     }
+
+//     return novoObjeto
+// }
+
+// console.log(filtrarArrays(dados))
+
+// 19. Dado dois objetos, obj1 e obj2, escreva uma função que crie um novo objeto
+// combinando as propriedades de ambos, onde as propriedades de obj2 têm
+// precedência sobre as do obj1 em caso de conflitos.
