@@ -425,3 +425,76 @@ Abaixo de 18.5 → Abaixo do peso
 // 19. Dado dois objetos, obj1 e obj2, escreva uma função que crie um novo objeto
 // combinando as propriedades de ambos, onde as propriedades de obj2 têm
 // precedência sobre as do obj1 em caso de conflitos.
+
+// function combinarObjeto(){
+//     return{ // Utilizando o operador Spread '...'
+//         ...obj1,
+//         ...obj2
+//     }
+// }
+
+// let obj1 = {
+//     nome: "Matheus",
+//     idade: 20
+// }
+
+// let obj2 = { //O obj2 sobrepoe o obj1
+//     idade: 25, 
+//     profissao: "Programador Full-Stack"
+
+// }
+
+// let resultado = combinarObjeto(obj1,obj2)
+// console.log(resultado)
+
+// 20. Dado um array de strings, crie um objeto onde cada string é uma chave, e seu valor é o
+// número de vezes que a string aparece no array.
+
+// let arrayStrings = ["banana", "maça", "laranja", "maça", "uva", "banana"]
+
+// let contador = {};
+
+// for (let i = 0; i < arrayStrings.length; i++) {
+//     let palavra = arrayStrings[i];
+
+//     if (contador[palavra]) {
+//         contador[palavra]++;
+//     } else {
+//         contador[palavra] = 1;
+//     }
+// }
+
+// console.log(contador);
+
+// 21. Suponha que você tem um array de objetos onde cada objeto representa uma venda
+// com vendedor e valor. Escreva uma função que retorne um objeto que sumarize o total
+// de vendas por vendedor.
+
+let vendas = [
+    {vendedor: "Matheus", valor: 100 },
+    {vendedor: "Rodrigo", valor: 200 },
+    {vendedor: "Julia", valor: 150 },
+    {vendedor: "Leticia", valor: 300 },
+    {vendedor: "Cassia", valor: 50 }
+];
+
+function totalVendasPorVendedor(vendas) {
+    
+    let totais = {};
+
+    for (let i = 0; i < vendas.length; i++) {
+
+        let vendedor = vendas[i].vendedor;
+        let valor = vendas[i].valor;
+
+        if (totais[vendedor]) {
+            totais[vendedor]+= valor;
+        } else {
+            totais[vendedor] = valor;
+        }
+    }
+
+    return totais;
+}
+
+console.log(totalVendasPorVendedor(vendas));
