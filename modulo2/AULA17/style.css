@@ -1,0 +1,30 @@
+body{
+    background-color: rgba(71, 114, 105, 0.795);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+h1{
+    color:blue;
+    font-size: 32px;
+    text-align: center;
+    
+}
+
+.card /*. é utilizado para acessar classe, bom pra replicar*/{
+    background-color: white; /* Define a cor de fundo do elemento como branco */
+    width: 500px; /* Define a largura fixa do elemento em 500 pixels */
+    height: auto; /* A altura será ajustada automaticamente de acordo com o conteúdo */
+    margin: 50px auto; /* Adiciona 50px de margem em cima e embaixo, e centraliza horizontalmente */
+    padding: 30px; /* Cria um espaçamento interno de 30px entre o conteúdo e as bordas */
+    border:2px solid black; 
+}
+
+#texto/*# é utilizado para acessar id, ou seja, fazer algo especifico*/{
+    font-size: 10px;
+}
